@@ -1,0 +1,38 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": [
+          "gui",
+          "fixed"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "academy:item/silbarn"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:special",
+      "base": "academy:item/silbarn_obj",
+      "model": {
+        "type": "academy:obj",
+        "model": "silbarn",
+        "texture": "academy:textures/models/silbarn.png",
+        "scale": 0.08,
+        "rotation": [
+          90,
+          0,
+          0
+        ],
+        "translation": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      }
+    }
+  }
+}

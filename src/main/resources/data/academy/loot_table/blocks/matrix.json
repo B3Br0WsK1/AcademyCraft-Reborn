@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "academy:matrix",
+          "condition": {
+            "type": "minecraft:match_block",
+            "blocks": "academy:matrix",
+            "state": {
+              "sub": "0"
+            }
+          }
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "academy:blocks/matrix"
+}

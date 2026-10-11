@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "academy:energy_convert_component",
+    "B": "academy:brain_component",
+    "C": "academy:machine_frame",
+    "D": "minecraft:note_block",
+    "E": "academy:calc_chip"
+  },
+  "pattern": [
+    " A ",
+    "BCD",
+    " E "
+  ],
+  "result": {
+    "id": "academy:ability_interferer"
+  }
+}

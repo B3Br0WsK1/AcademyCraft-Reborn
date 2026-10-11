@@ -1,0 +1,62 @@
+plugins {
+	id 'net.fabricmc.fabric-loom' version "${loom_version}"
+}
+
+version = project.version
+group = project.group
+
+base {
+	archivesName = "AcademyCraftReborn"
+}
+
+repositories {
+	mavenCentral()
+}
+
+loom {
+
+	mods {
+		"academy" {
+			sourceSet sourceSets.main
+		}
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// HOCON config library used by the ability balance config (Apache-2.0)
+	implementation "com.typesafe:config:1.4.3"
+	include "com.typesafe:config:1.4.3"
+}
+
+processResources {
+	def version = project.version
+	inputs.property "version", version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 25
+	it.options.encoding = "UTF-8"
+	it.options.compilerArgs += ["-Xmaxerrs", "10000"]
+}
+
+java {
+	withSourcesJar()
+	sourceCompatibility = JavaVersion.VERSION_25
+	targetCompatibility = JavaVersion.VERSION_25
+}
+
+jar {
+	from("LICENSE") {
+		rename { "${it}_AcademyCraftReborn" }
+	}
+	from("LICENSE_LambdaLib2")
+	from("NOTICE.md")
+}

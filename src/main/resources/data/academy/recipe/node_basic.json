@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "academy:calc_chip",
+    "B": "academy:constraint_ingot",
+    "C": "academy:machine_frame",
+    "D": "academy:crystal_low",
+    "E": "academy:reso_crystal"
+  },
+  "pattern": [
+    " A ",
+    "BCB",
+    "DED"
+  ],
+  "result": {
+    "id": "academy:node_basic"
+  }
+}

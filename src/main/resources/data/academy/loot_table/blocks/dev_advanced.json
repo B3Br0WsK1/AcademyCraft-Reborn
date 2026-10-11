@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "academy:dev_advanced",
+          "condition": {
+            "type": "minecraft:match_block",
+            "blocks": "academy:dev_advanced",
+            "state": {
+              "sub": "0"
+            }
+          }
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "academy:blocks/dev_advanced"
+}

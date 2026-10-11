@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "academy:solar_gen",
+          "condition": {
+            "type": "minecraft:match_block",
+            "blocks": "academy:solar_gen",
+            "state": {
+              "sub": "0"
+            }
+          }
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "academy:blocks/solar_gen"
+}

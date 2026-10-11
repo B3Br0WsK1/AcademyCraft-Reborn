@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:gold_nugget",
+    "B": "minecraft:redstone",
+    "C": "academy:calc_chip"
+  },
+  "pattern": [
+    " A ",
+    "BCB",
+    " A "
+  ],
+  "result": {
+    "id": "academy:brain_component"
+  }
+}

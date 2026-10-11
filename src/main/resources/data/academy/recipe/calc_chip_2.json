@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "academy:data_chip",
+    "academy:reso_crystal"
+  ],
+  "result": {
+    "id": "academy:calc_chip"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "academy:reso_crystal",
+    "B": "minecraft:redstone",
+    "C": "academy:machine_frame",
+    "D": "academy:data_chip"
+  },
+  "pattern": [
+    " A ",
+    "BCB",
+    "DAD"
+  ],
+  "result": {
+    "id": "academy:matrix"
+  }
+}

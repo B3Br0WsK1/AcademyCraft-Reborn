@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:glass_pane",
+    "B": "academy:wafer",
+    "C": "academy:energy_convert_component",
+    "D": "academy:machine_frame"
+  },
+  "pattern": [
+    "AAA",
+    " B ",
+    "CDC"
+  ],
+  "result": {
+    "id": "academy:solar_gen"
+  }
+}

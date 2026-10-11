@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "academy:constraint_plate",
+    "B": "minecraft:glowstone",
+    "C": "academy:dev_normal",
+    "D": "academy:node_standard",
+    "E": "academy:crystal_pure",
+    "F": "academy:reso_crystal"
+  },
+  "pattern": [
+    "AAA",
+    "BCB",
+    "DEF"
+  ],
+  "result": {
+    "id": "academy:dev_advanced"
+  }
+}

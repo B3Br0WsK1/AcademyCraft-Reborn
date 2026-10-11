@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "package": "cn.lambdalib2.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "EntityMixin",
+    "EntityTemplateMixin",
+    "LivingEntityMixin",
+    "PlayerMixin",
+    "ResultSlotMixin",
+    "FurnaceResultSlotMixin",
+    "ItemEntityMixin"
+  ],
+  "client": [
+    "client.KeyMappingAccessor",
+    "client.GuiGraphicsExtractorAccessor",
+    "client.ClientLevelMixin",
+    "client.FirstPersonHandsMixin",
+    "client.MouseHandlerMixin",
+    "client.KeyboardHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:redstone",
+    "B": "academy:imag_silicon_piece"
+  },
+  "pattern": [
+    "AAA",
+    " B "
+  ],
+  "result": {
+    "id": "academy:data_chip"
+  }
+}

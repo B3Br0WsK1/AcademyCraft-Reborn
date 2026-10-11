@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "academy:developer_portable",
+    "B": "academy:mat_core_0",
+    "C": "#minecraft:beds",
+    "D": "minecraft:piston",
+    "E": "academy:crystal_normal",
+    "F": "academy:machine_frame",
+    "G": "minecraft:redstone"
+  },
+  "pattern": [
+    " A ",
+    "BCD",
+    "EFG"
+  ],
+  "result": {
+    "id": "academy:dev_normal"
+  }
+}

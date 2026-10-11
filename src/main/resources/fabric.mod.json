@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "academy",
+  "version": "${version}",
+  "name": "AcademyCraft Reborn",
+  "description": "Unofficial Fabric port of AcademyCraft 1.1.3 by Lambda Innovation. Become an ESPer and alter your reality in Minecraft!",
+  "authors": ["Lambda Innovation"],
+  "contributors": ["AcademyCraft Reborn port"],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/academycraft-reborn",
+    "sources": "https://github.com/B3Br0WsK1/AcademyCraft-Reborn",
+    "issues": "https://github.com/B3Br0WsK1/AcademyCraft-Reborn/issues"
+  },
+  "license": "GPL-3.0-only",
+  "icon": "assets/academy/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["cn.academy.AcademyCraft"],
+    "client": ["cn.academy.client.AcademyCraftClient"]
+  },
+  "mixins": ["lambdalib2.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

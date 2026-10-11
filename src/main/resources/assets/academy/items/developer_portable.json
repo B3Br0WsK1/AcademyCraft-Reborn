@@ -1,0 +1,58 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": [
+          "gui",
+          "fixed"
+        ],
+        "model": {
+          "type": "minecraft:range_dispatch",
+          "property": "academy:energy",
+          "entries": [
+            {
+              "threshold": 0.5,
+              "model": {
+                "type": "minecraft:model",
+                "model": "academy:item/developer_portable_half"
+              }
+            },
+            {
+              "threshold": 1.0,
+              "model": {
+                "type": "minecraft:model",
+                "model": "academy:item/developer_portable_full"
+              }
+            }
+          ],
+          "fallback": {
+            "type": "minecraft:model",
+            "model": "academy:item/developer_portable_empty"
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:special",
+      "base": "academy:item/developer_portable_obj",
+      "model": {
+        "type": "academy:obj",
+        "model": "developer_portable",
+        "texture": "academy:textures/models/developer_portable.png",
+        "scale": 0.3,
+        "rotation": [
+          0,
+          180,
+          0
+        ],
+        "translation": [
+          0.5,
+          0.67,
+          0.64
+        ]
+      }
+    }
+  }
+}

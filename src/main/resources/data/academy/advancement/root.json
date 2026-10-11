@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "id": "academy:logo"
+    },
+    "title": {
+      "translate": "advancements.general.root"
+    },
+    "description": {
+      "translate": "advancements.general.root.desc"
+    },
+    "background": "academy:blocks/reso_ore",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

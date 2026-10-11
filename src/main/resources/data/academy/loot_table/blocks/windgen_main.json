@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "academy:windgen_main",
+          "condition": {
+            "type": "minecraft:match_block",
+            "blocks": "academy:windgen_main",
+            "state": {
+              "sub": "0"
+            }
+          }
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "academy:blocks/windgen_main"
+}
